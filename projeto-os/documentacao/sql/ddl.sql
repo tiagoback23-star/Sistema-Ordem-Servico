@@ -1,3 +1,4 @@
+-- DDL (criação das tabelas)
 CREATE TABLE usuarios (
     id_usuario SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -11,3 +12,4 @@ CREATE TABLE produtos (
     preco DECIMAL(10,2) NOT NULL,
     quantidade INTEGER NOT NULL
 );
+
