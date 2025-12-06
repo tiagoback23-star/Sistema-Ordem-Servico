@@ -14,5 +14,5 @@ Esta é a versão **corrigida e testada** do sistema de Ordens de Serviço.
 ## Estrutura
 - `api/` → arquivos PHP da API
 - `config/` → conexão com o banco
-- `wireframes/` → prints e documentação visual da Etapa 2
+- `wireframes/` → prints e documentação visual da Etapa 1 e 2
 - `README.md` → explicação geral do projeto atualizado
