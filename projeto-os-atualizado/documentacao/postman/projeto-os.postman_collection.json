@@ -1,0 +1,70 @@
+{
+  "info": {
+    "name": "Projeto OS - Assistência Técnica",
+    "_postman_id": "12345678-abcd-efgh-ijkl-987654321000",
+    "description": "Collection para testar os endpoints do Projeto Integrador (Login, Cadastro de Usuário, Criação de OS).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"admin@email.com\",\n    \"senha\": \"123456\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/login.php",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "login.php"]
+        }
+      }
+    },
+    {
+      "name": "Cadastrar Usuário",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"Maria Silva\",\n    \"email\": \"maria@email.com\",\n    \"senha\": \"senha123\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/cadastrar_usuario.php",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "cadastrar_usuario.php"]
+        }
+      }
+    },
+    {
+      "name": "Criar Ordem de Serviço",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id_cliente\": 1,\n    \"defeito\": \"Notebook não liga\",\n    \"status\": \"Aberta\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/criar_os.php",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "criar_os.php"]
+        }
+      }
+    }
+  ]
+}
