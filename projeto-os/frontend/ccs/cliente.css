@@ -1,0 +1,12 @@
+/* cliente.css → estiliza a tela de cadastro de clientes */
+#tela-clientes {
+  text-align: center;
+}
+
+#tela-clientes .input-group input {
+  margin-bottom: 10px;
+}
+
+#tela-clientes .btn {
+  width: 100%;
+}

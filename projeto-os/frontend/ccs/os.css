@@ -1,0 +1,14 @@
+/* os.css → estiliza a tela de ordens de serviço */
+#tela-os {
+  text-align: center;
+}
+
+#tela-os .input-group input,
+#tela-os .input-group select {
+  margin-bottom: 10px;
+}
+
+#lista-os {
+  margin-top: 20px;
+  text-align: left;
+}

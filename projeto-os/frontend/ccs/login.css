@@ -1,0 +1,12 @@
+/* login.css → estiliza a tela de login */
+#tela-login {
+  text-align: center;
+}
+
+#tela-login .input-group input {
+  margin-bottom: 10px;
+}
+
+#tela-login .btn {
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ordens de Serviço</title>
+    <link rel="stylesheet" href="../css/os.css">
+    <script src="../js/os.js"></script>
+</head>
+<body>
+    <div class="os-container">
+        <h2>Criar Ordem de Serviço</h2>
+        <input type="text" id="id_cliente" placeholder="ID do Cliente">
+        <input type="text" id="defeito" placeholder="Defeito">
+        <select id="status">
+            <option value="Aberta">Aberta</option>
+            <option value="Em andamento">Em andamento</option>
+            <option value="Concluída">Concluída</option>
+        </select>
+        <button onclick="criarOS()">Criar OS</button>
+
+        <h2>Listagem de OS</h2>
+        <button onclick="listarOS()">Listar OS</button>
+        <ul id="listaOS"></ul>
+    </div>
+</body>
+</html>

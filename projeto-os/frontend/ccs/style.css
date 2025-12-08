@@ -1,0 +1,100 @@
+/* Reset e fonte padrão */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f1f1;       /* fundo cinza claro */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* centraliza horizontal */
+  align-items: center;       /* centraliza vertical */
+}
+
+/* Container centralizado */
+.container {
+  background: #fff;          /* bloco branco */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2); /* sombra suave */
+  width: 350px;
+  text-align: center;
+}
+
+/* Ocultar telas */
+.hidden {
+  display: none;
+}
+
+/* Títulos */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #333;               /* texto escuro */
+}
+
+/* Botões */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn.primary {
+  background: #007bff;       /* azul igual ao modelo */
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #0056b3;       /* azul mais escuro no hover */
+}
+
+.btn.secondary {
+  background: #555;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background: #333;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Links */
+.login-links a {
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+/* Feedback de mensagens */
+.feedback {
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
+}

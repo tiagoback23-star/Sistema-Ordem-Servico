@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Ordens de Serviço</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Tela de Login -->
+  <div class="container" id="tela-login">
+    <h1>Sistema de Ordens de Serviço</h1>
+    <form id="form-login">
+      <div class="input-group">
+        <input type="text" id="usuario" placeholder="E-mail ou Usuário" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="senha" placeholder="Senha" required>
+      </div>
+      <button type="submit" class="btn primary">Entrar</button>
+    </form>
+    <div class="login-links">
+      <a href="#" id="btn-criar-conta">Criar conta</a>
+    </div>
+    <div id="login-feedback" class="feedback"></div>
+  </div>
+
+  <!-- Tela de Cadastro -->
+  <div class="container hidden" id="tela-cadastro">
+    <h2>Criar Conta</h2>
+    <form id="form-cadastro">
+      <div class="input-group">
+        <input type="email" id="cad-email" placeholder="Seu e-mail" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="cad-senha" placeholder="Senha" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="cad-confirmar" placeholder="Confirmar senha" required>
+      </div>
+      <button type="submit" class="btn primary">Cadastrar</button>
+      <button type="button" class="btn secondary" id="btn-voltar-login">Voltar</button>
+    </form>
+    <div id="cad-feedback" class="feedback"></div>
+  </div>
+
+  <!-- Menu -->
+  <div class="container hidden" id="tela-menu">
+    <h2>Menu Principal</h2>
+    <button class="btn primary" onclick="mostrarTela('tela-clientes')">Cadastro de Clientes</button>
+    <button class="btn primary" onclick="mostrarTela('tela-status')">Consulta/Atualização de Status</button>
+    <button class="btn primary" onclick="mostrarTela('tela-os')">Cadastro de Ordem de Serviço</button>
+    <button class="btn secondary" onclick="mostrarTela('tela-login')">Sair</button>
+  </div>
+
+  <!-- Cadastro de Clientes -->
+  <div class="container hidden" id="tela-clientes">
+    <h2>Cadastro de Clientes</h2>
+    <form id="form-clientes">
+      <div class="input-group">
+        <input type="text" id="nome_cliente" placeholder="Nome" required>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email_cliente" placeholder="E-mail" required>
+      </div>
+      <button type="submit" class="btn primary">Cadastrar Cliente</button>
+    </form>
+    <button class="btn secondary" onclick="mostrarTela('tela-menu')">Voltar ao Menu</button>
+    <div id="clientes-feedback" class="feedback"></div>
+  </div>
+
+  <!-- Status -->
+  <div class="container hidden" id="tela-status">
+    <h2>Consulta/Atualização de Status</h2>
+    <div id="lista-os"></div>
+    <button class="btn secondary" onclick="mostrarTela('tela-menu')">Voltar ao Menu</button>
+  </div>
+
+  <!-- Cadastro de OS -->
+  <div class="container hidden" id="tela-os">
+    <h2>Cadastro de Ordem de Serviço</h2>
+    <form id="form-os">
+      <div class="input-group">
+        <input type="number" id="id_cliente" placeholder="ID Cliente" required>
+      </div>
+      <div class="input-group">
+        <input type="date" id="data_os" required>
+      </div>
+      <div class="input-group">
+        <input type="text" id="defeito" placeholder="Defeito" required>
+      </div>
+      <div class="input-group">
+        <select id="status_os" required>
+          <option value="Aberta">Aberta</option>
+          <option value="Em andamento">Em andamento</option>
+          <option value="Concluída">Concluída</option>
+        </select>
+      </div>
+      <button type="submit" class="btn primary">Cadastrar OS</button>
+    </form>
+    <button class="btn secondary" onclick="mostrarTela('tela-menu')">Voltar ao Menu</button>
+    <div id="os-feedback" class="feedback"></div>
+  </div>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
